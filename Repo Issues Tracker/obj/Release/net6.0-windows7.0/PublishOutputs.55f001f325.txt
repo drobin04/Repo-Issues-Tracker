@@ -1,0 +1,16 @@
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\Repo Issues Tracker.exe
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\Repo Issues Tracker.dll
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\Repo Issues Tracker.deps.json
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\Repo Issues Tracker.runtimeconfig.json
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\Repo Issues Tracker.dll.config
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\Repo Issues Tracker.pdb
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\Newtonsoft.Json.dll
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\Microsoft.Web.WebView2.Core.dll
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\Microsoft.Web.WebView2.Core.xml
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\Microsoft.Web.WebView2.Wpf.xml
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\publish\Microsoft.Web.WebView2.WinForms.xml
