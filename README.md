@@ -6,7 +6,8 @@
  # Features
  * Can select any public/private repo on your account and will populate a list of open issues on the repo.
  * Can double-click any open issue to pop open a dialog with details and aggregated comments for the issue
- * (Coming Soon) Button to launch browser to this Github Issue directly
+ * Can Add Comments To An Existing Issue
+ * Button to launch browser to currently opened Github Issue directly
  * Can Create New Issues for selected Repo
  * Can Close a selected issue as completed from within the app, allowing for easily viewing/creating/closing issues without having to interact with github in a browser.
  

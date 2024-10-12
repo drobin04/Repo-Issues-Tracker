@@ -2,7 +2,7 @@
 Imports System.Text
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports Newtonsoft.Json.Linq
-
+Imports System.Diagnostics
 Public Class ViewExistingIssue
     Private Const GitHubApiUrl As String = "https://api.github.com/repos/{0}/{1}/issues/{2}"
     Private AccessToken As String
@@ -118,4 +118,31 @@ Public Class ViewExistingIssue
             End If
         End Using
     End Function
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim x As New AddCommentToIssue(RepoName, IssueId)
+        x.Show()
+
+    End Sub
+
+    Private Sub btnViewOnGithub_Click(sender As Object, e As EventArgs) Handles btnViewOnGithub.Click
+        OpenIssueInBrowser(RepoOwner, RepoName, IssueId)
+    End Sub
+
+    Public Sub OpenIssueInBrowser(owner As String, repo As String, issueNumber As Integer)
+        ' Construct the GitHub issue URL
+        Dim url As String = $"https://github.com/{owner}/{repo}/issues/{issueNumber}"
+
+        ' Use Process.Start with UseShellExecute = True to open the default web browser
+        Dim psi As New ProcessStartInfo()
+        psi.UseShellExecute = True
+        psi.FileName = url
+
+        Try
+            Process.Start(psi)
+        Catch ex As Exception
+            MessageBox.Show($"Unable to open the issue in the browser. Error: {ex.Message}")
+        End Try
+    End Sub
+
 End Class

@@ -27,6 +27,8 @@ Partial Class ViewExistingIssue
         Label1 = New Label()
         Label2 = New Label()
         Button1 = New Button()
+        Button2 = New Button()
+        btnViewOnGithub = New Button()
         SuspendLayout()
         ' 
         ' txtTitle
@@ -71,6 +73,7 @@ Partial Class ViewExistingIssue
         ' 
         ' Button1
         ' 
+        Button1.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         Button1.Location = New Point(12, 230)
         Button1.Name = "Button1"
         Button1.Size = New Size(188, 23)
@@ -78,11 +81,33 @@ Partial Class ViewExistingIssue
         Button1.Text = "CLOSE AND COMPLETE  ISSUE"
         Button1.UseVisualStyleBackColor = True
         ' 
+        ' Button2
+        ' 
+        Button2.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        Button2.Location = New Point(206, 230)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(121, 23)
+        Button2.TabIndex = 5
+        Button2.Text = "Add Comment"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' btnViewOnGithub
+        ' 
+        btnViewOnGithub.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        btnViewOnGithub.Location = New Point(333, 230)
+        btnViewOnGithub.Name = "btnViewOnGithub"
+        btnViewOnGithub.Size = New Size(116, 23)
+        btnViewOnGithub.TabIndex = 6
+        btnViewOnGithub.Text = "View On Github"
+        btnViewOnGithub.UseVisualStyleBackColor = True
+        ' 
         ' ViewExistingIssue
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(528, 259)
+        Controls.Add(btnViewOnGithub)
+        Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(Label2)
         Controls.Add(Label1)
@@ -99,4 +124,6 @@ Partial Class ViewExistingIssue
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents btnViewOnGithub As Button
 End Class
