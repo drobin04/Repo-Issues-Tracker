@@ -8,24 +8,6 @@ Public Class Form1
 
     Private isTokenRequested As Boolean = False
 
-    ' -- WEBVIEW CODE COMMENTED OUT --
-    'Private Sub WebView21_NavigationCompleted(sender As Object, e As Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs) Handles WebView21.NavigationCompleted
-    '    If WebView21.Source.AbsoluteUri.StartsWith(RedirectUri) AndAlso Not isTokenRequested Then
-    '        Dim query = WebView21.Source.Query
-    '        Dim queryParams = System.Web.HttpUtility.ParseQueryString(query)
-    '        Dim code = queryParams("code")
-
-    '        Debug.WriteLine("Authorization Code: " & code)
-
-    '        If Not String.IsNullOrEmpty(code) Then
-    '            WebView21.Visible = False
-    '            isTokenRequested = True  ' Prevent double triggering
-    '            GetAccessToken(code)
-    '        End If
-    '    End If
-    'End Sub
-
-    ' Button to start authentication
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAuthenticate.Click
         Dim ClientId As String = My.Settings.GitHubClientID
         Dim authorizeUrl As String = $"https://github.com/login/oauth/authorize?client_id={ClientId}&redirect_uri={RedirectUri}&scope=repo"
@@ -46,7 +28,7 @@ Public Class Form1
 
     Private Async Function HandleCallback() As Task
         Dim listener As New HttpListener()
-        listener.Prefixes.Add(RedirectUri) ' Ensure the slash at the end
+        listener.Prefixes.Add(RedirectUri)
         listener.Start()
 
         Try
@@ -133,7 +115,6 @@ Public Class Form1
 
     End Function
 
-    ' Function to load repositories into combobox
     ' Function to load repositories into combobox
     Private Async Function LoadRepositories(token As String) As Task
         Dim client = New HttpClient()

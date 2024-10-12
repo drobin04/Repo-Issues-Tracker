@@ -26,7 +26,7 @@
 
 # Linux Support
 
-This app has been tested to work on Linux! Haha, sort of.
+This app has been tested to work on Linux! Haha, sort of. I wrote it in .NET Framework because I didn't have very much time to do so in another language that would actually be cross-platform.
 
 You will need to install *wine*, *winetricks*, and then .NET Desktop Runtime 6.0 using winetricks. 
 
