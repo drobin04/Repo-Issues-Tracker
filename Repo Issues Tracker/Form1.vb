@@ -1,4 +1,5 @@
-﻿Imports System.Net
+﻿Imports System.Data.SqlTypes
+Imports System.Net
 Imports System.Net.Http
 Imports Newtonsoft.Json.Linq
 
@@ -115,8 +116,15 @@ Public Class Form1
 
     End Function
 
+    Private Sub AddCustomReposToCombobox()
+        For Each line As String In My.Settings.CustomReposList.Split(Environment.NewLine)
+            'MsgBox(line.ToString)
+            ComboBox1.Items.Add(line)
+        Next
+    End Sub
+
     ' Function to load repositories into combobox
-    Private Async Function LoadRepositories(token As String, Optional RunningAsFormLoad As Integer = False) As Task
+    Public Async Function LoadRepositories(token As String, Optional RunningAsFormLoad As Boolean = False) As Task
         Dim client = New HttpClient()
         client.DefaultRequestHeaders.Authorization = New System.Net.Http.Headers.AuthenticationHeaderValue("token", token)
         client.DefaultRequestHeaders.UserAgent.ParseAdd("request")
@@ -132,12 +140,14 @@ Public Class Form1
                                      For Each repo In repos
                                          ComboBox1.Items.Add(repo("name").ToString())
                                      Next
+                                     AddCustomReposToCombobox()
                                  End Sub)
             Else
                 ComboBox1.Items.Clear() ' Clear existing items
                 For Each repo In repos
                     ComboBox1.Items.Add(repo("name").ToString())
                 Next
+                AddCustomReposToCombobox()
             End If
 
             ' Select Saved Repo From Last Session If it exists
@@ -171,6 +181,16 @@ Public Class Form1
 
     ' Function to load issues for the selected repository into DataGridView
     Public Async Function LoadIssues(repoName As String) As Task
+        Dim username ' Will hold either current user, or repo owner.
+        ' Correct for repo name potentially having a custom 3rd party owner in it.
+        Dim ThirdPartyRepo As Boolean = False
+        If repoName.Contains("/") Then
+            username = repoName.TextBefore("/") ' Dont move this in front of the next line where we set reponame.
+            repoName = repoName.TextAfter("/") 'Naw seriously don't move it in front of me. 
+            My.Settings.GitHubUserName = username
+            ThirdPartyRepo = True
+
+        End If
         Dim client = New HttpClient()
         Dim token = My.Settings.GitHubAccessToken ' Retrieve the token from settings
         client.DefaultRequestHeaders.Authorization = New System.Net.Http.Headers.AuthenticationHeaderValue("token", token)
@@ -178,10 +198,15 @@ Public Class Form1
 
         Try
             ' Retrieve the current user's username
-            Dim userResponse = Await client.GetStringAsync("https://api.github.com/user")
-            Dim user = JObject.Parse(userResponse)
-            Dim username = user("login").ToString()
-            My.Settings.GitHubUserName = username
+            If ThirdPartyRepo Then
+                'Already set username above, do nothing
+            Else ' Not 3rd party repo, use current user for username / repo owner.
+                Dim userResponse = Await client.GetStringAsync("https://api.github.com/user")
+                Dim user = JObject.Parse(userResponse)
+                username = user("login").ToString()
+                My.Settings.GitHubUserName = username
+            End If
+
             Dim response = Await client.GetStringAsync($"https://api.github.com/repos/{username}/{repoName}/issues?state=open")
             Dim issues = JArray.Parse(response)
 
@@ -269,7 +294,6 @@ Public Class Form1
         My.Settings.GitHubClientSecret = InputBox("Enter your Github Client Secret:")
     End Sub
 
-    ' In your Form1 code, add this event handler
     Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
         ' Check if the double-clicked cell is valid
         If e.RowIndex >= 0 Then
@@ -292,6 +316,12 @@ Public Class Form1
             My.Settings.RepoSelection = ComboBox1.SelectedItem.ToString()
         End If
 
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim x As New CustomReposList(Me)
+        x.Show()
 
     End Sub
 End Class

@@ -18,6 +18,7 @@ Public Class AddCommentToIssue
         Me.IssueId = issueId
         Me.AccessToken = My.Settings.GitHubAccessToken
         Me.ParentForm = Parent
+        If Me.RepoName.Contains("/") Then Me.RepoName = Me.RepoName.TextAfter("/")
     End Sub
 
 

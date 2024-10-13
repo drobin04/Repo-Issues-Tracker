@@ -18,6 +18,7 @@ Public Class ViewExistingIssue
         Me.IssueId = issueId
         Me.AccessToken = My.Settings.GitHubAccessToken
         Me.ParentForm = parent
+        If Me.RepoName.Contains("/") Then Me.RepoName = Me.RepoName.TextAfter("/")
     End Sub
 
     ' Function to load comments for the specified issue
