@@ -8,19 +8,24 @@ Public Class AddCommentToIssue
     Private RepoOwner As String
     Private RepoName As String
     Private IssueId As Integer
+    Private ParentForm As ViewExistingIssue
+
     ' Constructor to initialize form with repository owner, repo name, and issue ID
-    Public Sub New(repoName As String, issueId As Integer)
+    Public Sub New(repoName As String, issueId As Integer, Parent As ViewExistingIssue)
         InitializeComponent()
         Me.RepoOwner = My.Settings.GitHubUserName
         Me.RepoName = repoName
         Me.IssueId = issueId
         Me.AccessToken = My.Settings.GitHubAccessToken
+        Me.ParentForm = Parent
     End Sub
 
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
         AddCommentToIssue(RepoOwner, RepoName, IssueId, AccessToken, TextBox1.Text)
-        MsgBox("Comment submitted!")
+        'MsgBox("Comment submitted!")
+        Me.ParentForm.LoadComments()
+
         Me.Close()
 
     End Sub

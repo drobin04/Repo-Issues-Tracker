@@ -21,7 +21,7 @@ Public Class ViewExistingIssue
     End Sub
 
     ' Function to load comments for the specified issue
-    Private Async Sub LoadComments()
+    Public Async Sub LoadComments()
         Dim client = New HttpClient()
         client.DefaultRequestHeaders.Authorization = New System.Net.Http.Headers.AuthenticationHeaderValue("token", AccessToken)
         client.DefaultRequestHeaders.UserAgent.ParseAdd("request")
@@ -30,7 +30,7 @@ Public Class ViewExistingIssue
 
 
             ' Construct the API URL to get the issue details
-            Dim issueApiUrl As String = String.Format(GitHubApiUrl, repoOwner, repoName, IssueId)
+            Dim issueApiUrl As String = String.Format(GitHubApiUrl, RepoOwner, RepoName, IssueId)
             Dim issue
             Debug.Write(issueApiUrl)
             Try
@@ -120,7 +120,7 @@ Public Class ViewExistingIssue
     End Function
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim x As New AddCommentToIssue(RepoName, IssueId)
+        Dim x As New AddCommentToIssue(RepoName, IssueId, Me)
         x.Show()
 
     End Sub
