@@ -7,6 +7,7 @@ C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\
 C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\Newtonsoft.Json.dll
 C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo Issues Tracker.vbproj.AssemblyReference.cache
 C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo_Issues_Tracker.AddCommentToIssue.resources
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo_Issues_Tracker.CustomReposList.resources
 C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo_Issues_Tracker.Form1.resources
 C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo_Issues_Tracker.NewIssue.resources
 C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo_Issues_Tracker.ViewExistingIssue.resources
