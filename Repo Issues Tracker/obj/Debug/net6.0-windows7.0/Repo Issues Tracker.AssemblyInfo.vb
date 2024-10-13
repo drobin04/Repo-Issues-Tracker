@@ -14,7 +14,7 @@ Option Explicit On
 Imports System
 Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Repo Issues Tracker"),  _
- Assembly: System.Reflection.AssemblyConfigurationAttribute("Release"),  _
+ Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
  Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65ce97d7d4563dc044b275bc067a09d337a6d935"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Repo Issues Tracker"),  _
