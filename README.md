@@ -1,7 +1,7 @@
 # Repo Issues Tracker
  The purpose of this app is to allow you to quickly view or add to the open issues for your various github repo's. 
  
- ![Screenshot](https://imgur.com/5lFzJUr)
+ ![Screenshot](https://i.imgur.com/5lFzJUr.png)
  ![Screenshot 2](https://i.imgur.com/whQsepg.png)
  
  # Features
