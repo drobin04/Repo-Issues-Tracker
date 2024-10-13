@@ -5,7 +5,7 @@
  ![Screenshot 2](https://i.imgur.com/whQsepg.png)
  
  # Features
- * Can select any public/private repo on your account and will populate a list of open issues on the repo.
+ * Can select any public/private repo on your account, or a manually specified 3rd party repo you have access to, and will populate a list of open issues on the repo.
  * Can double-click any open issue to pop open a dialog with details and aggregated comments for the issue
  * Can Add Comments To An Existing Issue
  * Button to launch browser to currently opened Github Issue directly
