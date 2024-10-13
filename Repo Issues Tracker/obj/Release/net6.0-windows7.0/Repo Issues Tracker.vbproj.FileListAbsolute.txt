@@ -1,0 +1,24 @@
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\Repo Issues Tracker.exe
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\Repo Issues Tracker.dll.config
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\Repo Issues Tracker.deps.json
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\Repo Issues Tracker.runtimeconfig.json
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\Repo Issues Tracker.dll
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\Repo Issues Tracker.pdb
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\bin\Release\net6.0-windows7.0\Newtonsoft.Json.dll
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo Issues Tracker.vbproj.AssemblyReference.cache
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo_Issues_Tracker.AddCommentToIssue.resources
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo_Issues_Tracker.Form1.resources
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo_Issues_Tracker.NewIssue.resources
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo_Issues_Tracker.ViewExistingIssue.resources
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo Issues Tracker.vbproj.GenerateResource.cache
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo Issues Tracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo Issues Tracker.AssemblyInfoInputs.cache
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo Issues Tracker.AssemblyInfo.vb
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo Issues Tracker.vbproj.CoreCompileInputs.cache
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo Issues Tracker.sourcelink.json
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo Iss.F73A8AD4.Up2Date
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo Issues Tracker.dll
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\refint\Repo Issues Tracker.dll
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo Issues Tracker.pdb
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\Repo Issues Tracker.genruntimeconfig.cache
+C:\Users\Douglas\Documents\Github Repos\Repo-Issues-Tracker\Repo Issues Tracker\obj\Release\net6.0-windows7.0\ref\Repo Issues Tracker.dll

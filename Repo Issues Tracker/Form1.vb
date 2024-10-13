@@ -116,7 +116,7 @@ Public Class Form1
     End Function
 
     ' Function to load repositories into combobox
-    Private Async Function LoadRepositories(token As String) As Task
+    Private Async Function LoadRepositories(token As String, Optional RunningAsFormLoad As Integer = False) As Task
         Dim client = New HttpClient()
         client.DefaultRequestHeaders.Authorization = New System.Net.Http.Headers.AuthenticationHeaderValue("token", token)
         client.DefaultRequestHeaders.UserAgent.ParseAdd("request")
@@ -138,6 +138,22 @@ Public Class Form1
                 For Each repo In repos
                     ComboBox1.Items.Add(repo("name").ToString())
                 Next
+            End If
+
+            ' Select Saved Repo From Last Session If it exists
+            If RunningAsFormLoad Then
+                If My.Settings.RepoSelection <> "" Then
+
+                    ' Check if combobox has the item we had in our setting value. If a match is found, select it.
+                    For Each item In ComboBox1.Items
+                        'MsgBox(item.ToString())
+                        If item.ToString = My.Settings.RepoSelection Then
+                            ComboBox1.SelectedItem = My.Settings.RepoSelection
+
+                        End If
+                    Next
+
+                End If
             End If
         Catch ex As Exception
             MessageBox.Show("Error loading repositories: " & ex.Message)
@@ -207,11 +223,14 @@ Public Class Form1
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'InitializeComponent() ' Putting this here causes something to break with the githab auth, the button becomes yellow and nothing happens
+        ' after the button is clicked. Not going to bother investigating for now. 10/12/2024 drobinson
+
         'If setting for githubaccesstoken is populated, load cbox for repos list.
         If My.Settings.GitHubAccessToken <> "" Then
             Try
                 btnAuthenticate.BackColor = SystemColors.Info
-                LoadRepositories(My.Settings.GitHubAccessToken)
+                LoadRepositories(My.Settings.GitHubAccessToken, True)
             Catch ex As Exception
                 MsgBox(ex.ToString)
 
@@ -267,5 +286,12 @@ Public Class Form1
         End If
     End Sub
 
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        ' Save dropdown for repo selection to a setting, to be retrieved on next launch.
+        If ComboBox1.SelectedItem.ToString <> "" Then
+            My.Settings.RepoSelection = ComboBox1.SelectedItem.ToString()
+        End If
 
+
+    End Sub
 End Class

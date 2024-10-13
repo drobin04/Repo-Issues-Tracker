@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|c:\\users\\douglas\\documents\\github repos\\repo-issues-tracker\\repo issues tracker\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|c:\\users\\douglas\\documents\\github repos\\repo-issues-tracker\\repo issues tracker\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\my project\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|solutionrelative:my project\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|c:\\users\\douglas\\documents\\github repos\\repo-issues-tracker\\repo issues tracker\\viewexistingissue.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|solutionrelative:viewexistingissue.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
@@ -19,14 +31,6 @@
       "RelativeMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|solutionrelative:addcommenttoissue.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|c:\\users\\douglas\\documents\\github repos\\repo-issues-tracker\\repo issues tracker\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|c:\\users\\douglas\\documents\\github repos\\repo-issues-tracker\\repo issues tracker\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|c:\\users\\douglas\\documents\\github repos\\repo-issues-tracker\\repo issues tracker\\newissue.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|solutionrelative:newissue.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|c:\\users\\douglas\\documents\\github repos\\repo-issues-tracker\\repo issues tracker\\repo issues tracker.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|solutionrelative:repo issues tracker.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\my project\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
-      "RelativeMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|solutionrelative:my project\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,48 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddCommentToIssue.vb",
-              "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\AddCommentToIssue.vb",
-              "RelativeDocumentMoniker": "AddCommentToIssue.vb",
-              "ToolTip": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\AddCommentToIssue.vb",
-              "RelativeToolTip": "AddCommentToIssue.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBYAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-12T18:04:59.391Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AddCommentToIssue.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\AddCommentToIssue.vb",
-              "RelativeDocumentMoniker": "AddCommentToIssue.vb",
-              "ToolTip": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\AddCommentToIssue.vb [Design]",
-              "RelativeToolTip": "AddCommentToIssue.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-12T18:03:54.129Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ViewExistingIssue.vb",
               "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\ViewExistingIssue.vb",
               "RelativeDocumentMoniker": "ViewExistingIssue.vb",
               "ToolTip": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\ViewExistingIssue.vb",
               "RelativeToolTip": "ViewExistingIssue.vb",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAwwJEAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAJEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-11T20:42:39.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ViewExistingIssue.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\ViewExistingIssue.vb",
               "RelativeDocumentMoniker": "ViewExistingIssue.vb",
@@ -103,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "NewIssue.vb",
               "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\NewIssue.vb",
               "RelativeDocumentMoniker": "NewIssue.vb",
@@ -115,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "NewIssue.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\NewIssue.vb",
               "RelativeDocumentMoniker": "NewIssue.vb",
@@ -127,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Form1.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\Form1.vb",
               "RelativeDocumentMoniker": "Form1.vb",
@@ -139,19 +115,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Form1.vb",
               "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\Form1.vb",
               "RelativeDocumentMoniker": "Form1.vb",
               "ToolTip": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\Form1.vb",
               "RelativeToolTip": "Form1.vb",
-              "ViewState": "AgIAAPUAAAAAAAAAAAAswHQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wPMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-11T22:51:24.775Z"
+              "WhenOpened": "2024-10-11T22:51:24.775Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\My Project\\Settings.settings",
+              "RelativeDocumentMoniker": "My Project\\Settings.settings",
+              "ToolTip": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\My Project\\Settings.settings",
+              "RelativeToolTip": "My Project\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2024-10-11T23:43:01.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddCommentToIssue.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\AddCommentToIssue.vb",
+              "RelativeDocumentMoniker": "AddCommentToIssue.vb",
+              "ToolTip": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\AddCommentToIssue.vb [Design]",
+              "RelativeToolTip": "AddCommentToIssue.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-12T18:03:54.129Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddCommentToIssue.vb",
+              "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\AddCommentToIssue.vb",
+              "RelativeDocumentMoniker": "AddCommentToIssue.vb",
+              "ToolTip": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\AddCommentToIssue.vb",
+              "RelativeToolTip": "AddCommentToIssue.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-12T18:04:59.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Repo Issues Tracker",
               "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\Repo Issues Tracker.vbproj",
               "RelativeDocumentMoniker": "Repo Issues Tracker.vbproj",
@@ -159,17 +172,6 @@
               "RelativeToolTip": "Repo Issues Tracker.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
               "WhenOpened": "2024-10-11T23:42:50.139Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Settings.settings",
-              "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\My Project\\Settings.settings",
-              "RelativeDocumentMoniker": "My Project\\Settings.settings",
-              "ToolTip": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\My Project\\Settings.settings",
-              "RelativeToolTip": "My Project\\Settings.settings",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
-              "WhenOpened": "2024-10-11T23:43:01.055Z"
             }
           ]
         }
