@@ -1,7 +1,7 @@
 # Repo Issues Tracker
  The purpose of this app is to allow you to quickly view or add to the open issues for your various github repo's. 
  
- ![Screenshot](https://i.imgur.com/5lFzJUr.png)
+ ![Screenshot](https://i.imgur.com/0va9051.png)
  ![Screenshot 2](https://i.imgur.com/whQsepg.png)
  
  # Features
@@ -16,15 +16,11 @@
  
  You can download the setup / installer files [Here](Releases/)
  
- Upon the first run of the application, you will be prompted for a Client ID and Client Secret for a GitHub OAuth Application. 
- 
- You will need to set up an App for this under the Developer Settings page of your github account in order to retrieve these. 
- 
- Here's a link: https://github.com/settings/developers
- 
- You'll want to create a new OAuth App, and set the Callback URL to http://localhost:5000/ 
- 
- You can set the homepage URL that you're required to enter to this project's Github if you wish.
+ Upon the first run of the application, you will be prompted for a GitHub Personal Access Token (PAT). 
+
+ You can create a PAT by opening GitHub, and navigating to Settings > Developer Settings > Personal Access Tokens.
+
+ You can either use the older style personal access tokens, or you can use fine-grained personal access tokens that have read/write permissions for repo's and issues. 
 
 # Linux Support
 

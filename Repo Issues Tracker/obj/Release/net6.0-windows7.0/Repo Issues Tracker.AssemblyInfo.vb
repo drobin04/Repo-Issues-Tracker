@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Repo Issues Tracker"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Release"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31a14753e73f56d7888c681daf14fcdb6c8583c2"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a61af2e64485a6b6e6c183cced88583bd123193"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Repo Issues Tracker"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Repo Issues Tracker"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        btnAuthenticate = New Button()
         DataGridView1 = New DataGridView()
         IssueNumber = New DataGridViewTextBoxColumn()
         Title = New DataGridViewTextBoxColumn()
@@ -32,20 +31,10 @@ Partial Class Form1
         ComboBox1 = New ComboBox()
         lblRepoName = New Label()
         Button1 = New Button()
-        Button3 = New Button()
         Button4 = New Button()
+        LinkLabel1 = New LinkLabel()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' btnAuthenticate
-        ' 
-        btnAuthenticate.BackColor = Color.Yellow
-        btnAuthenticate.Location = New Point(12, 29)
-        btnAuthenticate.Name = "btnAuthenticate"
-        btnAuthenticate.Size = New Size(109, 23)
-        btnAuthenticate.TabIndex = 1
-        btnAuthenticate.Text = "Authenticate"
-        btnAuthenticate.UseVisualStyleBackColor = False
         ' 
         ' DataGridView1
         ' 
@@ -100,7 +89,7 @@ Partial Class Form1
         ' ComboBox1
         ' 
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(127, 27)
+        ComboBox1.Location = New Point(12, 27)
         ComboBox1.Name = "ComboBox1"
         ComboBox1.Size = New Size(265, 23)
         ComboBox1.TabIndex = 4
@@ -108,7 +97,7 @@ Partial Class Form1
         ' lblRepoName
         ' 
         lblRepoName.AutoSize = True
-        lblRepoName.Location = New Point(127, 9)
+        lblRepoName.Location = New Point(12, 9)
         lblRepoName.Name = "lblRepoName"
         lblRepoName.Size = New Size(37, 15)
         lblRepoName.TabIndex = 0
@@ -124,36 +113,37 @@ Partial Class Form1
         Button1.Text = "New Issue"
         Button1.UseVisualStyleBackColor = True
         ' 
-        ' Button3
-        ' 
-        Button3.Location = New Point(12, 5)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(109, 23)
-        Button3.TabIndex = 7
-        Button3.Text = "GitHub Client ID"
-        Button3.UseVisualStyleBackColor = True
-        ' 
         ' Button4
         ' 
-        Button4.Location = New Point(398, 27)
+        Button4.Location = New Point(283, 26)
         Button4.Name = "Button4"
         Button4.Size = New Size(132, 23)
         Button4.TabIndex = 8
         Button4.Text = "Custom Repos List"
         Button4.UseVisualStyleBackColor = True
         ' 
+        ' LinkLabel1
+        ' 
+        LinkLabel1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Location = New Point(686, 5)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(108, 15)
+        LinkLabel1.TabIndex = 9
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "Update GitHub PAT"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 232)
+        Controls.Add(LinkLabel1)
         Controls.Add(Button4)
-        Controls.Add(Button3)
         Controls.Add(Button1)
         Controls.Add(ComboBox1)
         Controls.Add(Button2)
         Controls.Add(DataGridView1)
-        Controls.Add(btnAuthenticate)
         Controls.Add(lblRepoName)
         MinimumSize = New Size(600, 270)
         Name = "Form1"
@@ -162,7 +152,6 @@ Partial Class Form1
         ResumeLayout(False)
         PerformLayout()
     End Sub
-    Friend WithEvents btnAuthenticate As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button2 As Button
     Friend WithEvents ComboBox1 As ComboBox
@@ -172,7 +161,7 @@ Partial Class Form1
     Friend WithEvents State As DataGridViewTextBoxColumn
     Friend WithEvents CreatedAt As DataGridViewTextBoxColumn
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents LinkLabel1 As LinkLabel
 
 End Class

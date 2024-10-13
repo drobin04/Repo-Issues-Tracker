@@ -1,6 +1,7 @@
 ﻿Imports System.Net
 Imports System.IO
 Imports System.Text
+Imports Newtonsoft.Json.Linq
 
 Public Class AddCommentToIssue
 
@@ -24,14 +25,14 @@ Public Class AddCommentToIssue
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
         AddCommentToIssue(RepoOwner, RepoName, IssueId, AccessToken, TextBox1.Text)
-        'MsgBox("Comment submitted!")
+
         Me.ParentForm.LoadComments()
 
         Me.Close()
 
     End Sub
 
-    Public Function AddCommentToIssue(owner As String, repo As String, issueNumber As Integer, accessToken As String, comment As String) As String
+    Public Sub AddCommentToIssue(owner As String, repo As String, issueNumber As Integer, accessToken As String, comment As String)
         Try
             ' The GitHub API URL for adding a comment
             Dim url As String = $"https://api.github.com/repos/{owner}/{repo}/issues/{issueNumber}/comments"
@@ -43,9 +44,9 @@ Public Class AddCommentToIssue
             request.UserAgent = "YourAppName" ' GitHub requires a User-Agent header
             request.Headers("Authorization") = $"Bearer {accessToken}"
 
-            ' Prepare the JSON body with the comment text
-            Dim jsonData As String = $"{{""body"": ""{comment.Replace("""", "\""")}""}}"
-            Dim dataBytes As Byte() = Encoding.UTF8.GetBytes(jsonData)
+            ' Prepare the JSON body with the comment text, using JObject to escape properly
+            Dim jsonData As New JObject(New JProperty("body", comment))
+            Dim dataBytes As Byte() = Encoding.UTF8.GetBytes(jsonData.ToString())
             request.ContentLength = dataBytes.Length
 
             ' Write the request body
@@ -57,7 +58,7 @@ Public Class AddCommentToIssue
             Using response As HttpWebResponse = CType(request.GetResponse(), HttpWebResponse)
                 Using reader As New StreamReader(response.GetResponseStream())
                     Dim responseText As String = reader.ReadToEnd()
-                    Return $"Comment added successfully: {responseText}"
+
                 End Using
             End Using
 
@@ -66,12 +67,12 @@ Public Class AddCommentToIssue
             If ex.Response IsNot Nothing Then
                 Using reader As New StreamReader(ex.Response.GetResponseStream())
                     Dim errorResponse As String = reader.ReadToEnd()
-                    Return $"Error adding comment: {errorResponse}"
+                    MsgBox($"Error adding comment: {errorResponse}")
                 End Using
             End If
             ' Return the exception message if no response is available
-            Return $"Exception occurred: {ex.Message}"
+            MsgBox($"Exception occurred: {ex.Message}")
         End Try
-    End Function
+    End Sub
 
 End Class

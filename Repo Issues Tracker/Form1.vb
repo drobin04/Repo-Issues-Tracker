@@ -9,11 +9,18 @@ Public Class Form1
 
     Private isTokenRequested As Boolean = False
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAuthenticate.Click
-        Dim ClientId As String = My.Settings.GitHubClientID
-        Dim authorizeUrl As String = $"https://github.com/login/oauth/authorize?client_id={ClientId}&redirect_uri={RedirectUri}&scope=repo"
 
-        Dim startInfo As New ProcessStartInfo()
+#Region "Deprecated / Code To Be Removed"
+    Private Sub GetOAuthInfo()
+        My.Settings.GitHubClientID = InputBox("Enter your Github Client ID - This should be for a Github OAuth App:")
+        My.Settings.GitHubClientSecret = InputBox("Enter your Github Client Secret:")
+    End Sub
+    'NO LONGER NEEDED AS NOW WE'RE DOING A GITHUB PAT
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        Dim ClientId = My.Settings.GitHubClientID
+        Dim authorizeUrl = $"https://github.com/login/oauth/authorize?client_id={ClientId}&redirect_uri={RedirectUri}&scope=repo"
+
+        Dim startInfo As New ProcessStartInfo
         startInfo.UseShellExecute = True
         startInfo.FileName = authorizeUrl
 
@@ -65,6 +72,7 @@ Public Class Form1
 
     ' Function to get access token
     Private Async Function GetAccessToken(code As String) As Task
+        ' NO LONGER NEEDED AS WE ARE NOW HAVING USER ENTER A GITHUB PAT
         Dim client = New HttpClient()
         Dim values = New Dictionary(Of String, String) From {
             {"client_id", My.Settings.GitHubClientID},
@@ -112,9 +120,14 @@ Public Class Form1
             Debug.WriteLine("Exception during token exchange: " & ex.Message)
             MessageBox.Show("Exception during token exchange: " & ex.Message)
         End Try
-        btnAuthenticate.BackColor = SystemColors.Info
+        'btnAuthenticate.BackColor = SystemColors.Info
 
     End Function
+
+
+
+#End Region
+
 
     Private Sub AddCustomReposToCombobox()
         For Each line As String In My.Settings.CustomReposList.Split(Environment.NewLine)
@@ -254,7 +267,7 @@ Public Class Form1
         'If setting for githubaccesstoken is populated, load cbox for repos list.
         If My.Settings.GitHubAccessToken <> "" Then
             Try
-                btnAuthenticate.BackColor = SystemColors.Info
+                'btnAuthenticate.BackColor = SystemColors.Info
                 LoadRepositories(My.Settings.GitHubAccessToken, True)
             Catch ex As Exception
                 MsgBox(ex.ToString)
@@ -262,8 +275,9 @@ Public Class Form1
             End Try
 
         End If
-        If My.Settings.GitHubClientID = "" Then
-            GetOAuthInfo()
+        If My.Settings.GitHubAccessToken = "" Then
+            'GetOAuthInfo()
+            UpdatePAT()
 
         End If
 
@@ -286,13 +300,10 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         GetOAuthInfo()
     End Sub
-    Private Sub GetOAuthInfo()
-        My.Settings.GitHubClientID = InputBox("Enter your Github Client ID - This should be for a Github OAuth App:")
-        My.Settings.GitHubClientSecret = InputBox("Enter your Github Client Secret:")
-    End Sub
+
 
     Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
         ' Check if the double-clicked cell is valid
@@ -323,5 +334,16 @@ Public Class Form1
         Dim x As New CustomReposList(Me)
         x.Show()
 
+    End Sub
+
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        UpdatePAT()
+
+    End Sub
+
+    Private Sub UpdatePAT()
+        My.Settings.GitHubAccessToken = InputBox("Enter GitHub Personal Access Token - You can get this by navigating to Settings > Developer Settings > Personal Access Tokens on Github. It will need read/write permissions on Repos/Issues in order to work properly.")
+        MsgBox("API Token Changed To : " & My.Settings.GitHubAccessToken)
     End Sub
 End Class
