@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|c:\\users\\douglas\\documents\\github repos\\repo-issues-tracker\\repo issues tracker\\options.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|solutionrelative:options.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|c:\\users\\douglas\\documents\\github repos\\repo-issues-tracker\\repo issues tracker\\options.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|solutionrelative:options.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|c:\\users\\douglas\\documents\\github repos\\repo-issues-tracker\\repo issues tracker\\options.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|solutionrelative:options.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2AC30B9-99FB-434B-AE83-CC8C731D6111}|Repo Issues Tracker.vbproj|c:\\users\\douglas\\documents\\github repos\\repo-issues-tracker\\repo issues tracker\\viewexistingissue.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -58,24 +58,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "options.vb",
               "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\options.vb",
               "RelativeDocumentMoniker": "options.vb",
               "ToolTip": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\options.vb",
               "RelativeToolTip": "options.vb",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBIAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-15T03:48:11.33Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "options.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\options.vb",
               "RelativeDocumentMoniker": "options.vb",
@@ -94,8 +94,7 @@
               "ToolTip": "C:\\Users\\Douglas\\Documents\\Github Repos\\Repo-Issues-Tracker\\Repo Issues Tracker\\Repo Issues Tracker.vbproj",
               "RelativeToolTip": "Repo Issues Tracker.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
-              "WhenOpened": "2024-10-15T03:34:43.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T03:34:43.362Z"
             },
             {
               "$type": "Document",
@@ -107,8 +106,7 @@
               "RelativeToolTip": "ViewExistingIssue.vb",
               "ViewState": "AgIAAHkAAAAAAAAAAAAcwIYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-13T03:17:08.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T03:17:08.617Z"
             },
             {
               "$type": "Document",
@@ -144,8 +142,7 @@
               "RelativeToolTip": "Form1.vb",
               "ViewState": "AgIAAOIAAAAAAAAAAAAAAPIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-11T22:51:24.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T22:51:24.775Z"
             },
             {
               "$type": "Document",
