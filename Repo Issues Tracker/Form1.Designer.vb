@@ -136,11 +136,11 @@ Partial Class Form1
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(421, 27)
+        Button3.Location = New Point(421, 26)
         Button3.Name = "Button3"
-        Button3.Size = New Size(101, 23)
+        Button3.Size = New Size(75, 23)
         Button3.TabIndex = 10
-        Button3.Text = "Clear Settings"
+        Button3.Text = "Options"
         Button3.UseVisualStyleBackColor = True
         ' 
         ' Form1

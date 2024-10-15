@@ -69,30 +69,6 @@ Namespace My
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("")>  _
-        Public Property GitHubClientID() As String
-            Get
-                Return CType(Me("GitHubClientID"),String)
-            End Get
-            Set
-                Me("GitHubClientID") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
-        Public Property GitHubClientSecret() As String
-            Get
-                Return CType(Me("GitHubClientSecret"),String)
-            End Get
-            Set
-                Me("GitHubClientSecret") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property GitHubUserName() As String
             Get
                 Return CType(Me("GitHubUserName"),String)

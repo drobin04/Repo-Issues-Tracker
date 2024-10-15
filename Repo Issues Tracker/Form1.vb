@@ -11,118 +11,7 @@ Public Class Form1
 
 
 #Region "Deprecated / Code To Be Removed"
-    Private Sub GetOAuthInfo()
-        My.Settings.GitHubClientID = InputBox("Enter your Github Client ID - This should be for a Github OAuth App:")
-        My.Settings.GitHubClientSecret = InputBox("Enter your Github Client Secret:")
-    End Sub
-    'NO LONGER NEEDED AS NOW WE'RE DOING A GITHUB PAT
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-        Dim ClientId = My.Settings.GitHubClientID
-        Dim authorizeUrl = $"https://github.com/login/oauth/authorize?client_id={ClientId}&redirect_uri={RedirectUri}&scope=repo"
 
-        Dim startInfo As New ProcessStartInfo
-        startInfo.UseShellExecute = True
-        startInfo.FileName = authorizeUrl
-
-        Try
-            Process.Start(startInfo)
-        Catch ex As Exception
-            MessageBox.Show("An error occurred while trying to open the browser: " & ex.Message)
-        End Try
-
-        ' Start listening for the callback using HttpListener
-        Task.Run(AddressOf HandleCallback)
-    End Sub
-
-    Private Async Function HandleCallback() As Task
-        Dim listener As New HttpListener()
-        listener.Prefixes.Add(RedirectUri)
-        listener.Start()
-
-        Try
-            ' Wait for the callback
-            Debug.WriteLine("Waiting for GitHub OAuth callback...")
-
-            Dim context = Await listener.GetContextAsync()
-            Dim code = context.Request.QueryString("code")
-
-            If Not String.IsNullOrEmpty(code) Then
-                ' Respond to the request
-                Dim response = context.Response
-                Dim responseString = "Authorization successful. You can close this window."
-                Dim buffer = System.Text.Encoding.UTF8.GetBytes(responseString)
-
-                response.ContentLength64 = buffer.Length
-                Using output = response.OutputStream
-                    Await output.WriteAsync(buffer, 0, buffer.Length)
-                End Using
-
-                ' Proceed to exchange the authorization code for an access token
-                Await GetAccessToken(code)
-            Else
-                Debug.WriteLine("Authorization code not found in the request.")
-            End If
-
-        Catch ex As Exception
-            Debug.WriteLine("Error in HTTP listener: " & ex.Message)
-        Finally
-            listener.Stop()
-        End Try
-    End Function
-
-    ' Function to get access token
-    Private Async Function GetAccessToken(code As String) As Task
-        ' NO LONGER NEEDED AS WE ARE NOW HAVING USER ENTER A GITHUB PAT
-        Dim client = New HttpClient()
-        Dim values = New Dictionary(Of String, String) From {
-            {"client_id", My.Settings.GitHubClientID},
-            {"client_secret", My.Settings.GitHubClientSecret},
-            {"code", code},
-            {"redirect_uri", RedirectUri}
-        }
-
-        Dim content = New FormUrlEncodedContent(values)
-
-        Try
-            Dim response = Await client.PostAsync("https://github.com/login/oauth/access_token", content)
-            Dim responseString = Await response.Content.ReadAsStringAsync()
-
-            ' Log the full response for debugging purposes
-            Debug.WriteLine("Full response: " & responseString)
-
-            If response.IsSuccessStatusCode Then
-                Dim token As String = Nothing
-
-                ' Check if the response is JSON or query string
-                If responseString.StartsWith("{") Then
-                    ' Handle JSON response
-                    Dim jsonResponse = JObject.Parse(responseString)
-                    token = jsonResponse("access_token")?.ToString()
-                Else
-                    ' Handle query string response
-                    Dim queryResponse = System.Web.HttpUtility.ParseQueryString(responseString)
-                    token = queryResponse("access_token")
-                End If
-
-                If Not String.IsNullOrEmpty(token) Then
-                    My.Settings.GitHubAccessToken = token
-                    My.Settings.Save() ' Save the settings
-                    Debug.WriteLine("Access Token saved in settings.")
-                    Await LoadRepositories(token)
-                Else
-                    Debug.WriteLine("Failed to retrieve access token from response.")
-                End If
-            Else
-                Debug.WriteLine($"Error retrieving access token: {response.StatusCode} - {responseString}")
-                MessageBox.Show($"Error retrieving access token: {response.StatusCode} - {responseString}")
-            End If
-        Catch ex As Exception
-            Debug.WriteLine("Exception during token exchange: " & ex.Message)
-            MessageBox.Show("Exception during token exchange: " & ex.Message)
-        End Try
-        'btnAuthenticate.BackColor = SystemColors.Info
-
-    End Function
 
 
 
@@ -300,11 +189,6 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
-        GetOAuthInfo()
-    End Sub
-
-
     Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
         ' Check if the double-clicked cell is valid
         If e.RowIndex >= 0 Then
@@ -353,11 +237,9 @@ Public Class Form1
         MsgBox("API Token Changed To : " & My.Settings.GitHubAccessToken)
     End Sub
 
-    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
-        My.Settings.GitHubAccessToken = ""
-        My.Settings.GitHubClientID = ""
-        My.Settings.GitHubClientSecret = ""
-        My.Settings.GitHubUserName = ""
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim x As New options
+        x.Show()
 
     End Sub
 End Class

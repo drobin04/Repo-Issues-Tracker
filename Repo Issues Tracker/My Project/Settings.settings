@@ -5,12 +5,6 @@
     <Setting Name="GitHubAccessToken" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="GitHubClientID" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="GitHubClientSecret" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
     <Setting Name="GitHubUserName" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
