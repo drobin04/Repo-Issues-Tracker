@@ -322,11 +322,15 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-        ' Save dropdown for repo selection to a setting, to be retrieved on next launch.
-        If ComboBox1.SelectedItem.ToString <> "" Then
-            My.Settings.RepoSelection = ComboBox1.SelectedItem.ToString()
-        End If
+        Try
+            ' Save dropdown for repo selection to a setting, to be retrieved on next launch.
+            If ComboBox1.SelectedItem.ToString <> "" Then
+                My.Settings.RepoSelection = ComboBox1.SelectedItem.ToString()
+            End If
 
+        Catch ex As Exception
+
+        End Try
 
     End Sub
 
@@ -344,6 +348,16 @@ Public Class Form1
 
     Private Sub UpdatePAT()
         My.Settings.GitHubAccessToken = InputBox("Enter GitHub Personal Access Token - You can get this by navigating to Settings > Developer Settings > Personal Access Tokens on Github. It will need read/write permissions on Repos/Issues in order to work properly.")
+        LoadRepositories(My.Settings.GitHubAccessToken)
+
         MsgBox("API Token Changed To : " & My.Settings.GitHubAccessToken)
+    End Sub
+
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+        My.Settings.GitHubAccessToken = ""
+        My.Settings.GitHubClientID = ""
+        My.Settings.GitHubClientSecret = ""
+        My.Settings.GitHubUserName = ""
+
     End Sub
 End Class

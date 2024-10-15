@@ -33,6 +33,7 @@ Partial Class Form1
         Button1 = New Button()
         Button4 = New Button()
         LinkLabel1 = New LinkLabel()
+        Button3 = New Button()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -133,11 +134,21 @@ Partial Class Form1
         LinkLabel1.TabStop = True
         LinkLabel1.Text = "Update GitHub PAT"
         ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(421, 27)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(101, 23)
+        Button3.TabIndex = 10
+        Button3.Text = "Clear Settings"
+        Button3.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 232)
+        Controls.Add(Button3)
         Controls.Add(LinkLabel1)
         Controls.Add(Button4)
         Controls.Add(Button1)
@@ -163,5 +174,6 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Button3 As Button
 
 End Class
